@@ -10,7 +10,7 @@ MAINTAINER_EMAIL = "alexis.boukouvalas@gmail.com"
 DOWNLOAD_URL = 'https://github.com/ManchesterBioinference/BranchedGP'
 LICENSE = 'MIT'
 
-VERSION = '2.0'
+VERSION = '2.1'
 
 setup(
     name=NAME,
@@ -28,8 +28,10 @@ setup(
     package_data={},
     install_requires=[
         "tensorflow>=2.4,<3",
+        # change to "tensorflow-macos>=2.4,<3", if working on Apple Silicon
         "gpflow>=2,<3",
         "matplotlib",
+        "seaborn",
     ],
     python_requires=">=3.5",
 )
